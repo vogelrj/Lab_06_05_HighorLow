@@ -6,9 +6,9 @@ public class Lab_06_05_HighorLow {
         String Trash = "";
         int randNum = 0;
         int userNum = 0;
-        Random rand = new Random();
+        Random generator = new Random();
         Scanner in = new Scanner(System.in);
-        randNum = rand.nextInt(10-1) + 1;
+        randNum = generator.nextInt(10) + 1;
         System.out.println("Guess what whole number [1-10] I am thinking of?");
         if (in.hasNextInt()){
             userNum = in.nextInt();
